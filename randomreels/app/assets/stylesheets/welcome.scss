@@ -3,15 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
     text-align: center;
-    background-color: #D4C8E7;
+    background-image: url("popcorn-background.png");
+    margin: 100px;
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 4em;
+    color: #282829;
 }
 
 #start {
-    font-size: 70px;
+    font-size: 50px;
+    color: white;
+    background-color: #381F6F;
     border: solid black 2px;
     border-radius: 5px;
     padding: 50px 100px;
