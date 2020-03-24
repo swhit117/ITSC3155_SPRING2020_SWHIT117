@@ -14,9 +14,12 @@ h1 {
 
 #start {
     font-size: 50px;
+    border-radius: 5px;
+    padding: 50px 100px;
+}
+
+button {
     color: white;
     background-color: #381F6F;
     border: solid black 2px;
-    border-radius: 5px;
-    padding: 50px 100px;
 }
