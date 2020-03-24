@@ -1,5 +1,4 @@
 class PagesController < ApplicationController
-    def pick
-        
+    def new
     end
 end
