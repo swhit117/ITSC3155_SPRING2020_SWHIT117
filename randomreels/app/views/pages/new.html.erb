@@ -1,7 +1,15 @@
 <h1 id = "small_title">Random Reels</h1>
+<h1 id = "movie_title">Avengers: Endgame (2019)</h1>
+
+<div class = "caption">
+    <img src = "<%= asset_path('avengers.jpg') %>" alt = "Movie Poster" style = "width:300px;height:400px;">
+    <p id = "movie_desrip">Genre: Action, Adventure, Drama<br/>
+        Rated: PG-13<br/>
+        Length: 3 hrs 1 min</p>
+</div>
+
 
 <div>
-    <img src = "<%= asset_path('avengers.jpg') %>" alt = "Movie Poster" style = "width:300px;height:400px;">
     <button type = "button" id = "pick">Pick</button>
     <button type = "button" id = "like">More like this</button>
     <button type = "button" id = "dislike">Less like this</button>
@@ -11,17 +19,20 @@
 <style>
     body {
         background: #E6DEF3;
-        text-align: left;
-        vertical-align: top;
         margin: 20px;
     }
     
-    img {
-      display: block;
-      margin-top: 120px;
-      margin-left: 300px;
-      width: 40%;
-      float: left;
+    div.caption {
+        display: inline-block;
+        margin-top: 30px;
+        margin-left: 300px;
+        float: left;
+        text-align: left;
+    }
+    
+    #movie_desrip {
+    color: #282829;
+    text-align: left;
     }
     
     #pick {
@@ -29,7 +40,7 @@
         border-radius: 5px;
         padding: 15px 120px;
         margin-right: 300px;
-        margin-top: 120px;
+        margin-top: 30px;
         margin-left: 40px;
     }
     
