@@ -1,8 +1,50 @@
 <h1 id = "small_title">Random Reels</h1>
+<h1 id = "congrats">Enjoy the movie</h1>
+
+<div class = "caption">
+    <img src = "<%= asset_path('avengers.jpg') %>" alt = "Movie Poster" style = "width:300px;height:400px;">
+    <p id = "descrip_last">Genre: Action, Adventure, Drama<br/>
+        Rated: PG-13<br/>
+        Length: 3 hrs 1 min<br/>
+        Description: After the devastating events of Avengers: Infinity War (2018), the universe is in ruins.
+        With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions 
+        and restore balance to the universe.
+    </p>
+    <button type = "button" id = "back">Back</button>
+     <img id = "tmdb" src = "<%= asset_path('blue_long_2-9665a76b1ae401a510ec1e0ca40ddcb3b0cfe45f1d51b77a308fea0845885648') %>"
+    alt = "TMDB attribute">
+</div>
+
 
 <style>
     body {
         background: #E6DEF3;
         margin: 20px;
+    }
+    
+    #back {
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    #descrip_last {
+        color: #282829;
+        text-align: center;
+        margin-left: 400px;
+        margin-right: 400px;
+    }
+    
+    #congrats {
+        color: #282829;
+        margin-top: 70px;
+    }
+    
+    div.caption {
+        display: inline-block;
+        margin-top: 30px;
+        float: center;
+        text-align: center;
     }
 </style>
