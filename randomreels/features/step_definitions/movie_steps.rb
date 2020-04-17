@@ -3,7 +3,7 @@ Given("I am on the home page") do
 end
 
 When("I click on the {string} button") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  click_button string
 end
 
 Then("I should be on the {string} page") do |string|
