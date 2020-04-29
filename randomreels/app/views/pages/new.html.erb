@@ -12,8 +12,7 @@
 
 
 <div>
-    <%= button_to "PICK", new_result_path, :method => :get %>
-    <!--<button type = "button" onclick="window.location.href = 'https://f9185fe333df4a349203c88969603497.vfs.cloud9.us-east-1.amazonaws.com/pages/show'" id = "pick">Pick</button>-->
+    <%= button_to "Pick", new_result_path, :method => :get, class: 'pick' %>
     <button type = "button" onclick="window.location.href = 'https://f9185fe333df4a349203c88969603497.vfs.cloud9.us-east-1.amazonaws.com/pages/new'" id = "like">More like this</button>
     <button type = "button" onclick="window.location.href = 'https://f9185fe333df4a349203c88969603497.vfs.cloud9.us-east-1.amazonaws.com/pages/new'" id = "dislike">Less like this</button>
     <button type = "button" onclick="window.location.href = 'https://f9185fe333df4a349203c88969603497.vfs.cloud9.us-east-1.amazonaws.com/pages/new'" id = "no">Not interested</button>
@@ -43,13 +42,16 @@
         text-align: left;
     }
     
-    #pick {
+    .pick {
         font-size: 20px;
         border-radius: 5px;
-        padding: 15px 120px;
-        margin-right: 63%;
+        padding: 15px 125px;
+        margin-right: 24%;
         margin-top: 30px;
-        margin-left: 40px;
+        margin-left: 30px;
+        color: white;
+        background-color: #381F6F;
+        border: solid black 2px;
     }
     
     #like {
@@ -65,7 +67,6 @@
         font-size: 15px;
         border-radius: 5px;
         padding: 15px 20px;
-        margin-right: 63%;
         margin-left: 25px;
         float: left;
         margin-top: 30px;
@@ -74,8 +75,7 @@
     #no {
         font-size: 20px;
         border-radius: 5px;
-        padding: 15px 76px;
-        margin-right: 63%;
+        padding: 15px 82px;
         margin-top: 30px;
         margin-left: 40px;
         float: left;

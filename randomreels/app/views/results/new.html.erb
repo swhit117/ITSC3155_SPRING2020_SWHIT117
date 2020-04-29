@@ -10,7 +10,7 @@
         With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions 
         and restore balance to the universe.
     </p>
-    <%= button_to "BACK", new_page_path, :method => :get %>
+    <%= button_to "BACK", new_page_path, :method => :get, class: 'back' %>
     <!--<button type = "button" onclick="window.location.href = 'https://f9185fe333df4a349203c88969603497.vfs.cloud9.us-east-1.amazonaws.com/pages/new'" id = "back">Back</button>-->
      <img id = "tmdb" src = "<%= asset_path('blue_long_2-9665a76b1ae401a510ec1e0ca40ddcb3b0cfe45f1d51b77a308fea0845885648') %>"
     alt = "TMDB attribute">
@@ -23,11 +23,14 @@
         margin: 20px;
     }
     
-    #back {
+    .back {
         display: inline-block;
         font-size: 14px;
         border-radius: 5px;
         margin-top: 10px;
+        color: white;
+        background-color: #381F6F;
+        border: solid black 2px;
     }
     
     #descrip_last {
