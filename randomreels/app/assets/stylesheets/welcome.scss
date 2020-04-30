@@ -20,11 +20,10 @@ body {
 }
 
 #movie_title {
-    font-size: 2em;
+    font-size: min(0.5em, 2em);
     color: #282829;
-    text-align: left;
-    margin-left: 300px;
-    margin-top: 110px;
+    margin-right: 20px;
+    margin-top: 0px;
 }
     
 .start {
@@ -43,8 +42,8 @@ button {
 }
 
 #tmdb {
-    margin-top: 150px;
-    margin-right: 43%;
-    margin-left: 43%;
-    
+    margin-top: 10px;
+    margin-left: 0%;
+    height: 25%;
+    width: 25%;
 }
